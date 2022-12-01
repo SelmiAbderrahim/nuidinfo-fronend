@@ -1,7 +1,12 @@
 import React from "react";
 
-const index = () => {
-  return <div>Layout</div>;
+const index = ({ children }) => {
+  return (
+    <div>
+      {/* Put navbar here */}
+      {children}
+    </div>
+  );
 };
 
 export default index;
