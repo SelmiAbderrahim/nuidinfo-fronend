@@ -5,6 +5,7 @@ const index = ({ children }) => {
     <div>
       {/* Put navbar here */}
       {children}
+      {/* Put navbar here */}
     </div>
   );
 };
