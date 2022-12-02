@@ -14,6 +14,7 @@ function App() {
         <MainLayout>
           <Routes>
             <Route element={<Home />} path="/" index />
+            <Route element={<h1>Question Page</h1>} path="question" />
             {/* {routes.map((route, index) => {
               const Component = route.component;
               <Route

@@ -1,11 +1,17 @@
 import React from "react";
-
+import Toolbar from "../../components/Navigation/Toolbar.jsx/index.js";
+import Footer from "../../components/footer";
 const index = ({ children }) => {
   return (
-    <div>
-      {/* Put navbar here */}
+    <main>
+      <div class="big-wrapper light">
+      <Toolbar/>
+      
       {children}
-    </div>
+
+      
+      </div>
+    </main>
   );
 };
 
