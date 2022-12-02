@@ -6,15 +6,16 @@ import routes from "./routes";
 import Home from "./pages/Home";
 import Loading from "./components/Loading";
 import MainLayout from "./layouts/MainLayout";
+import Quiz from "./layouts/Quiz";
 
 function App() {
   return (
     <>
       <Suspense fallback={<Loading />}>
-        <MainLayout>
-          <Routes>
-            <Route element={<Home />} path="/" index />
-            {/* {routes.map((route, index) => {
+        <MainLayout />
+        <Routes>
+          <Route element={<Home />} path="/" index />
+          {/* {routes.map((route, index) => {
               const Component = route.component;
               <Route
                 exact={route.exact}
@@ -23,8 +24,8 @@ function App() {
                 key={index}
               />;
             })} */}
-          </Routes>
-        </MainLayout>
+        </Routes>
+        <Quiz />
       </Suspense>
     </>
   );
